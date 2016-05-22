@@ -1,0 +1,217 @@
+@font-face {
+    font-family: leaguegothic;
+    src: url(../leaguegothic-regular-webfont.ttf);
+}
+
+$white-color: rgb(242, 240, 240);
+$red-color: rgb(240, 10, 10);
+
+body {
+  background-image: url('../images/burried/burried.png');
+  color: $white-color;
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron;
+}
+
+.body {
+  min-height: 600px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: $white-color;
+}
+
+nav {
+  text-align: center;
+  padding: 0 15% 0 15%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 180px;
+}
+
+nav span#logo_container {
+  display: inline-block;
+  width: 15%;
+  max-width: 120px;
+  height: 50px;
+}
+
+nav span img#header_logo {
+  display: block;
+  width: 100%;
+}
+
+nav .nav_button {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+}
+
+nav a#border_on_right {
+  border-right-style: solid;
+  border-right-color: $white-color;
+  border-right-width: 3px;
+}
+
+.sidebar {
+	position: fixed;
+	top: 10%;
+	right: 0px;
+	bottom: 30%;
+	width: 80px;
+}
+
+.sidebar_logo {
+	width: 40px;
+	margin: 15px 0 15px 18px;
+}
+
+footer {
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 20px;
+  height: 100px;
+}
+
+footer .footer_right {
+  display: inline;
+  width: 49%;
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 20px;
+  color: $red-color;
+}
+
+footer .footer_left {
+  display: inline;
+  width: 49%;
+  float: left;
+}
+
+
+/*****  index  ********/
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+  
+div#wrapper {
+  width: 60%;
+  margin: 15px auto 0 auto;
+  position: relative;
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+div#twitch_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+div#bracket_container {
+  visibility: hidden;
+}
+
+
+/******** play *******/
+
+table.play_week_tournaments {
+  margin: 15px auto 30px auto;
+}
+
+table.play_week_tournaments a {
+  font-size: 26px;
+}
+
+.play_title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: $red-color;
+}
+
+.play_week_tournaments tr {
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.play_week_tournaments tr#open-tr {
+}
+
+.play_week_tournaments td {
+  padding: 0 60px 0 60px;
+}
+
+.play_week_tournaments td#open {
+  font-size: 30px;
+}
+
+.division_logo {
+  margin: 5px
+}
+
+.play_under_table {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+
+/****** about *******/
+
+.about_text {
+  box-sizing: border-box;
+  width: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px auto 20px auto;
+  background-color: rgba(255,255,255,0.1)
+}
+
+
+/********** how to **********/
+
+.howto_container {
+  width: 70%;
+  margin: 30px auto 20px auto;
+  font-size: 22px;
+}
+
+.rule {
+  margin-bottom: 40px;
+}
+
+.checklist > p {
+  margin-bottom: 15px;
+}
+
+.checklist > ul {
+  margin-bottom: 25px;
+}
+
+.checklist li {
+  margin-top: 7px;
+}
+
+.list_title {
+  color: $red-color;
+}
